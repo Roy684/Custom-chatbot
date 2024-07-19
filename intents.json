@@ -11,7 +11,7 @@
         "Good day"
       ],
       "responses": [
-        "Hey :-)",
+        "Hey ",
         "Hello, thanks for visiting",
         "Hi there, what can I do for you?",
         "Hi there, how can I help?"
@@ -32,40 +32,45 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "items",
+      "tag": "AI tool",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "I'm looking for an AI tool that can automatically edit my travel vlogs by cutting out unimportant parts.",
+        "I need an AI tool for photo retouching that can smooth skin and remove blemishes.",
+        "I'm searching for an AI video editor that adds subtitles automatically based on the audio.",
+        "I want an AI tool that can create animated transitions between my video clips.",
+        "I need a tool that uses AI to organize my photo library by tagging and categorizing images.",
+        "I'm looking for an AI tool that can stabilize shaky video footage.",
+        "I'm interested in an AI tool that can generate video summaries by extracting key moments.",
+        "I'm interested in AI tools that can transform audios."
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "Okay",
+        "Anything else you are looking for?"
       ]
     },
     {
-      "tag": "payments",
+      "tag": "Questions?",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "Can you help me find an AI tool that enhances the resolution of old, low-quality images?",
+        "Do you know of any AI tools that can colorize black and white photos?",
+        "Can you suggest an AI tool that helps with noise reduction in my audio recordings?",
+        "Can you suggest some Ai tool that can separate speech from noise?"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Yeah sure!",
+        "Sure here are some products."
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "Price related",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "Are these tools free?",
+        "Can you tell me if these tools are free or not?",
+        "How much does this tool cost?"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "You can look that up on their official site.",
+        "I don't have that information."
       ]
     },
     {
