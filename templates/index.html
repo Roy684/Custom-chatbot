@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 </head>
-<body class="show-chatbot">
+<body>
     <button class="chatbot-toggler">
         <span class="material-symbols-outlined">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
@@ -31,10 +31,11 @@
     </div>
 
     <script>
+        const chatbotToggler = document.querySelector(".chatbot-toggler");
         document.getElementById("send-btn").addEventListener("click", function() {
             let userInput = document.getElementById("user-input").value;
             if (userInput.trim() !== "") {
-                addMessage("user-message", userInput);
+                addMessage("chat outgoing", `<p>${userInput}</p>`);
                 fetch("/chat", {
                     method: "POST",
                     headers: {
@@ -58,6 +59,7 @@
             chatBox.appendChild(messageElement);
             chatBox.scrollTop = chatBox.scrollHeight;
         }
+        chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
     </script>
 </body>
 </html>
