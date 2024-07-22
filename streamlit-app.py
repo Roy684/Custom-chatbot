@@ -2,11 +2,13 @@ import streamlit as st
 import random
 import json
 import torch
+import nltk
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 import numpy as np
 
-# Set the device to GPU if available, otherwise CPU
+nltk.download('punkt')
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load the intents and model
