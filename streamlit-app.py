@@ -12,7 +12,7 @@ nltk.download('punkt')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load the intents and model
-with open('intents.json', 'r') as json_data:
+with open('new_intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
 FILE = "data.pth"
@@ -29,7 +29,7 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Sam"
+bot_name = "Bot"
 
 # Function to get a response from the model
 def get_response(message):
